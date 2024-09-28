@@ -320,7 +320,7 @@ void stim_delay ( uint16_t delayms)
  *  Description:  run callback function after some milliseconds by asynchronous.
  * =====================================================================================
  */
-int8_t stim_runlater ( uint16_t delayms, void (*callback)(void))
+int8_t stim_runlater ( uint16_t delayms, void (*callback)(void))// @NOTE 
 {
   struct stim_event *event;
 
@@ -450,7 +450,7 @@ void stim_tick (void)
  *                this function must be execute by while loop in main.c
  * =====================================================================================
  */
-void stim_mainloop ( void )
+void stim_mainloop ( void )// @NOTE 
 {
   uint8_t i;
   struct stim_event *event;
